@@ -1,8 +1,15 @@
-function App() {
+import { Container } from "semantic-ui-react";
+import EventDashboard from "../../features/events/dashboard/EventDashboard";
+import NavBar from "./nav/NavBar";
+
+export default function App() {
   
   return (
-    <h1>Welcome in Revents</h1>
+    <>
+      <NavBar />
+      <Container className='main'>
+        <EventDashboard />
+      </Container>
+    </>
   )
 }
-
-export default App
