@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button, Container, Menu, MenuItem } from 'semantic-ui-react'
+import SignedOutButtons from './SignedOutButtons'
 
 export default function NavBar() {
   return (
@@ -17,15 +18,7 @@ export default function NavBar() {
                 Create Event
             </button>
             </MenuItem>
-            <MenuItem position="right">
-            <button style={{ backgroundColor: "transparent", color: "white", border: "1px solid white", padding: "10px 15px", cursor: "pointer" }}>
-            Login
-            </button>
-
-            <button style={{ backgroundColor: "transparent", color: "white", border: "1px solid white", padding: "10px 15px", cursor: "pointer", marginLeft: "0.5em" }}>
-            Sign Out
-            </button>
-            </MenuItem>
+            <SignedOutButtons />
         </Container>
     </Menu>
   )
