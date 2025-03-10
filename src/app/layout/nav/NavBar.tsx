@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button, Container, Menu, MenuItem } from 'semantic-ui-react'
 import SignedOutButtons from './SignedOutButtons'
+import SignedInButtons from './SignedInButtons'
 
 export default function NavBar() {
   return (
@@ -18,7 +19,7 @@ export default function NavBar() {
                 Create Event
             </button>
             </MenuItem>
-            <SignedOutButtons />
+            <SignedInButtons />
         </Container>
     </Menu>
   )
