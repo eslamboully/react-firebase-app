@@ -5,6 +5,7 @@ import { useState } from "react";
 import { AppEvent } from "../types/event";
 import { Outlet, useLocation } from "react-router-dom";
 import HomePage from "../../features/home/HomePage";
+import ModalManager from "../common/modals/ModalManager";
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
   return (
     location.pathname === '/' ? <HomePage /> :
     <>
+      <ModalManager />
       <NavBar />
       <Container className='main'>
           <Outlet />
